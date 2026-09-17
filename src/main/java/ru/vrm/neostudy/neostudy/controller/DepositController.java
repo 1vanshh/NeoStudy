@@ -9,19 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.vrm.neostudy.neostudy.dto.DepositRequest;
 import ru.vrm.neostudy.neostudy.dto.DepositResponse;
-import ru.vrm.neostudy.neostudy.service.CalculateDeposit;
+import ru.vrm.neostudy.neostudy.service.DepositCalculator;
 
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class DepositController {
 
-    private final CalculateDeposit depositService;
+    private final DepositCalculator depositCalculator;
 
     @PostMapping("/calculate")
     public ResponseEntity<DepositResponse> calculate(
             @Valid @RequestBody DepositRequest depositRequest) {
 
-        return ResponseEntity.ok(depositService.calculateDeposit(depositRequest));
+        return ResponseEntity.ok(depositCalculator.calculate(depositRequest));
     }
 }

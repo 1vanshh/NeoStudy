@@ -3,15 +3,16 @@ package ru.vrm.neostudy.neostudy.service.impl;
 import org.springframework.stereotype.Service;
 import ru.vrm.neostudy.neostudy.dto.DepositRequest;
 import ru.vrm.neostudy.neostudy.dto.DepositResponse;
-import ru.vrm.neostudy.neostudy.service.CalculateDeposit;
+import ru.vrm.neostudy.neostudy.service.DepositCalculator;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 @Service
-public class DepositServiceImpl implements CalculateDeposit {
+public class DepositServiceImpl implements DepositCalculator {
 
-    public DepositResponse calculateDeposit(DepositRequest depositRequest) {
+    @Override
+    public DepositResponse calculate(DepositRequest depositRequest) {
 
         BigDecimal monthlyRate = depositRequest.rate()
                 .divide(BigDecimal.valueOf(1200), 10, RoundingMode.HALF_UP);

@@ -4,6 +4,13 @@ import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 
+/**
+ * Deposit calculation request.
+ *
+ * @param amount initial deposit amount
+ * @param months deposit term in months
+ * @param rate annual interest rate in percent
+ */
 public record DepositRequest (
 
         @NotNull
