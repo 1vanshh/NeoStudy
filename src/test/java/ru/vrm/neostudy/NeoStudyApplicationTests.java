@@ -1,4 +1,4 @@
-package ru.vrm.neostudy.neostudy;
+package ru.vrm.neostudy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
