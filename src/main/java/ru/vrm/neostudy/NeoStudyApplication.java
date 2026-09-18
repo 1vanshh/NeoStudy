@@ -1,4 +1,4 @@
-package ru.vrm.neostudy.neostudy;
+package ru.vrm.neostudy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

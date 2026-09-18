@@ -1,7 +1,7 @@
-package ru.vrm.neostudy.neostudy.service;
+package ru.vrm.neostudy.service;
 
-import ru.vrm.neostudy.neostudy.dto.DepositRequest;
-import ru.vrm.neostudy.neostudy.dto.DepositResponse;
+import ru.vrm.neostudy.dto.DepositRequest;
+import ru.vrm.neostudy.dto.DepositResponse;
 
 public interface DepositCalculator {
 

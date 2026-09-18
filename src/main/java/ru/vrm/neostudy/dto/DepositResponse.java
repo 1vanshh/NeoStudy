@@ -1,4 +1,4 @@
-package ru.vrm.neostudy.neostudy.dto;
+package ru.vrm.neostudy.dto;
 
 import java.math.BigDecimal;
 
